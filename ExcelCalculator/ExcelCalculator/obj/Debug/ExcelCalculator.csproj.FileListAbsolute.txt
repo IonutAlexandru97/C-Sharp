@@ -1,0 +1,11 @@
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.csprojAssemblyReference.cache
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.csproj.ResolveComReference.cache
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.Form1.resources
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.Properties.Resources.resources
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.csproj.GenerateResource.cache
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.csproj.CoreCompileInputs.cache
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\bin\Debug\ExcelCalculator.exe.config
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\bin\Debug\ExcelCalculator.exe
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\bin\Debug\ExcelCalculator.pdb
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.exe
+C:\Users\IonutCandea\Desktop\ExcelCalculator\ExcelCalculator\obj\Debug\ExcelCalculator.pdb
