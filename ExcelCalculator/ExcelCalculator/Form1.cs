@@ -49,7 +49,9 @@ namespace ExcelCalculator
             }
             else
             {
-                textBox1.AppendText("Date: " + line.DateAdded + " ------>  Val F: " + line.FactorDePutere + "  R:  " + line.PutereReactiva + "  Result:  " + this.applyAlgorithm(line) + Environment.NewLine);
+                textBox1.AppendText("Date: " + line.DateAdded + " ----------->  Val F: " + line.FactorDePutere + "  R:  " + line.PutereReactiva 
+                    + "----------------------------------------------------->"
+                    + "||" +"  Result:  " + this.applyAlgorithm(line) + Environment.NewLine);
             }
         }
 
@@ -129,6 +131,7 @@ namespace ExcelCalculator
                                 excelWorksheet.AddLine(excelLine);
 
                                 this.appendLine(excelLine);
+                                this.sum(excelLine);
                             }
                         }
                         catch (Exception ex)
@@ -170,6 +173,36 @@ namespace ExcelCalculator
                 GC.WaitForPendingFinalizers();
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
+            }
+        }
+
+        private void sum(ExcelLine excelLine)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(
+                    new MethodInvoker(
+                        delegate () { sum(excelLine); }));
+            }
+            else
+            {
+                double x = 0;
+                if (excelLine.FactorDePutere < 0.65)
+                {
+                    x = excelLine.PutereReactiva * 0.1926;
+                    sum1Text.Text = x + double.Parse(sum1Text.Text) + "";
+                }
+                if (excelLine.FactorDePutere < 0.9)
+                {
+                    x = excelLine.PutereReactiva * 0.0642;
+                    sum2Text.Text = x + double.Parse(sum2Text.Text) + "";
+                }
+                else if(excelLine.FactorDePutere > 0.9)
+                {
+                    x = 0;
+                    textBox2.Text = "" + x; 
+                }
+
             }
         }
 
