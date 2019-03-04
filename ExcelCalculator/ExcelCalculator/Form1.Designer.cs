@@ -46,6 +46,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.resetResultsBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dateTimeStartInterval
@@ -198,11 +199,22 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Totals:";
             // 
+            // resetResultsBtn
+            // 
+            this.resetResultsBtn.Location = new System.Drawing.Point(168, 505);
+            this.resetResultsBtn.Name = "resetResultsBtn";
+            this.resetResultsBtn.Size = new System.Drawing.Size(75, 23);
+            this.resetResultsBtn.TabIndex = 16;
+            this.resetResultsBtn.Text = "Reset Results";
+            this.resetResultsBtn.UseVisualStyleBackColor = true;
+            this.resetResultsBtn.Click += new System.EventHandler(this.resetResultsBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 623);
+            this.Controls.Add(this.resetResultsBtn);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label7);
@@ -246,6 +258,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button resetResultsBtn;
     }
 }
 

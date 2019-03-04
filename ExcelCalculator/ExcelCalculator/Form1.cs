@@ -49,9 +49,9 @@ namespace ExcelCalculator
             }
             else
             {
-                textBox1.AppendText("Date: " + line.DateAdded + " ----------->  Val F: " + line.FactorDePutere + "  R:  " + line.PutereReactiva 
+                textBox1.AppendText("Date: " + line.DateAdded + " ----------->  Val F: " + line.FactorDePutere.ToString("0.00") + "  R:  " + line.PutereReactiva.ToString("0.00") 
                     + "----------------------------------------------------->"
-                    + "||" +"  Result:  " + this.applyAlgorithm(line) + Environment.NewLine);
+                    + "||" +"  Result:  " + this.applyAlgorithm(line).ToString("0.00") + Environment.NewLine);
             }
         }
 
@@ -66,6 +66,20 @@ namespace ExcelCalculator
             else
             {
                 this.btnLoadExcel.Enabled = status;
+            }
+        }
+
+        private void setResetButtonStatus(bool status)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(
+                    new MethodInvoker(
+                        delegate () { setResetButtonStatus(status); }));
+            }
+            else
+            {
+                this.resetResultsBtn.Enabled = status;
             }
         }
 
@@ -190,12 +204,14 @@ namespace ExcelCalculator
                 if (excelLine.FactorDePutere < 0.65)
                 {
                     x = excelLine.PutereReactiva * 0.1926;
-                    sum1Text.Text = x + double.Parse(sum1Text.Text) + "";
+                    double sum = x + double.Parse(sum1Text.Text);
+                    sum1Text.Text = sum.ToString("0.00");
                 }
-                if (excelLine.FactorDePutere < 0.9)
+                if ( excelLine.FactorDePutere > 0.65 && excelLine.FactorDePutere < 0.9)
                 {
                     x = excelLine.PutereReactiva * 0.0642;
-                    sum2Text.Text = x + double.Parse(sum2Text.Text) + "";
+                    double sum = x + double.Parse(sum2Text.Text);
+                    sum2Text.Text = sum.ToString("0.00");
                 }
                 else if(excelLine.FactorDePutere > 0.9)
                 {
@@ -218,6 +234,7 @@ namespace ExcelCalculator
 
         private void processWorker_DoWork(object sender, DoWorkEventArgs e)
         {
+            this.setResetButtonStatus(false);
             this.setLoadButtonStatus(false);
             this.initFile(filePath);
         }
@@ -229,8 +246,19 @@ namespace ExcelCalculator
 
         private void processWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+            this.setResetButtonStatus(true);
             this.setLoadButtonStatus(true);
+            this.initFile(filePath);
         }
-    
+
+        private void resetResultsBtn_Click(object sender, EventArgs e)
+        {
+                sum1Text.Text = "0";
+                sum2Text.Text = "0" ;
+                textBox2.Text = "0";
+                textBox1.Clear();   
+        }
+
     }
 }
+
