@@ -47,6 +47,21 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.resetResultsBtn = new System.Windows.Forms.Button();
+            this.computeBtn = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // dateTimeStartInterval
@@ -141,7 +156,7 @@
             // 
             // sum1Text
             // 
-            this.sum1Text.Location = new System.Drawing.Point(421, 568);
+            this.sum1Text.Location = new System.Drawing.Point(427, 530);
             this.sum1Text.Name = "sum1Text";
             this.sum1Text.Size = new System.Drawing.Size(116, 20);
             this.sum1Text.TabIndex = 9;
@@ -150,7 +165,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(456, 552);
+            this.label5.Location = new System.Drawing.Point(462, 514);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 10;
@@ -158,7 +173,7 @@
             // 
             // sum2Text
             // 
-            this.sum2Text.Location = new System.Drawing.Point(611, 568);
+            this.sum2Text.Location = new System.Drawing.Point(617, 530);
             this.sum2Text.Name = "sum2Text";
             this.sum2Text.Size = new System.Drawing.Size(116, 20);
             this.sum2Text.TabIndex = 11;
@@ -167,7 +182,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(628, 552);
+            this.label6.Location = new System.Drawing.Point(634, 514);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 13);
             this.label6.TabIndex = 12;
@@ -176,7 +191,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(821, 552);
+            this.label7.Location = new System.Drawing.Point(827, 514);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 13;
@@ -184,7 +199,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(780, 568);
+            this.textBox2.Location = new System.Drawing.Point(786, 530);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(116, 20);
             this.textBox2.TabIndex = 14;
@@ -193,7 +208,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(365, 568);
+            this.label8.Location = new System.Drawing.Point(371, 530);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(39, 13);
             this.label8.TabIndex = 15;
@@ -203,17 +218,159 @@
             // 
             this.resetResultsBtn.Location = new System.Drawing.Point(168, 505);
             this.resetResultsBtn.Name = "resetResultsBtn";
-            this.resetResultsBtn.Size = new System.Drawing.Size(75, 23);
+            this.resetResultsBtn.Size = new System.Drawing.Size(106, 23);
             this.resetResultsBtn.TabIndex = 16;
             this.resetResultsBtn.Text = "Reset Results";
             this.resetResultsBtn.UseVisualStyleBackColor = true;
             this.resetResultsBtn.Click += new System.EventHandler(this.resetResultsBtn_Click);
             // 
+            // computeBtn
+            // 
+            this.computeBtn.Location = new System.Drawing.Point(168, 591);
+            this.computeBtn.Name = "computeBtn";
+            this.computeBtn.Size = new System.Drawing.Size(106, 23);
+            this.computeBtn.TabIndex = 17;
+            this.computeBtn.Text = "Compute";
+            this.computeBtn.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(427, 591);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(116, 20);
+            this.textBox3.TabIndex = 18;
+            this.textBox3.Text = "Tarif1 ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(462, 572);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Tarif";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(617, 591);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(116, 20);
+            this.textBox4.TabIndex = 20;
+            this.textBox4.Text = "Tarif 2";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(647, 572);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Tarif";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(526, 712);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 22;
+            this.textBox5.Text = "Tarif 1 + Tarif 2";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(553, 693);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Total";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(427, 651);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(116, 20);
+            this.textBox6.TabIndex = 24;
+            this.textBox6.Text = " Tarif 1 * 3 * 0.0656 * Total 1";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(617, 651);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(116, 20);
+            this.textBox7.TabIndex = 25;
+            this.textBox7.Text = "Tarif 2 * 0.0656 * Total 2";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(956, 530);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(116, 20);
+            this.textBox8.TabIndex = 26;
+            this.textBox8.Text = "Casuta 7 excel = Suma";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(987, 514);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(56, 13);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "Wa [kWh]";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(986, 572);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(28, 13);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Tarif";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(956, 591);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(116, 20);
+            this.textBox9.TabIndex = 28;
+            this.textBox9.Text = "Tarif 3";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(983, 632);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(31, 13);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Total";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(956, 651);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(116, 20);
+            this.textBox10.TabIndex = 30;
+            this.textBox10.Text = "Tarif 3  * Wa";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1377, 623);
+            this.ClientSize = new System.Drawing.Size(1361, 754);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.computeBtn);
             this.Controls.Add(this.resetResultsBtn);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox2);
@@ -232,7 +389,7 @@
             this.Controls.Add(this.dateEndTimeInterval);
             this.Controls.Add(this.dateTimeStartInterval);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Excel Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +416,21 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button resetResultsBtn;
+        private System.Windows.Forms.Button computeBtn;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox10;
     }
 }
 
